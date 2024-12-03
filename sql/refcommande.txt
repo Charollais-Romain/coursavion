@@ -1,0 +1,63 @@
+# Creating a basic list of SQL commands and useful commands that the user can download as a txt file.
+
+sql_commands = """
+1. SELECT: Utilisé pour extraire des données d'une base de données.
+   Syntaxe: SELECT colonne1, colonne2 FROM table;
+
+2. INSERT INTO: Utilisé pour insérer des données dans une table.
+   Syntaxe: INSERT INTO table (colonne1, colonne2) VALUES (valeur1, valeur2);
+
+3. UPDATE: Utilisé pour mettre à jour les valeurs existantes dans une table.
+   Syntaxe: UPDATE table SET colonne1 = valeur1 WHERE condition;
+
+4. DELETE: Utilisé pour supprimer des lignes dans une table.
+   Syntaxe: DELETE FROM table WHERE condition;
+
+5. CREATE DATABASE: Utilisé pour créer une nouvelle base de données.
+   Syntaxe: CREATE DATABASE nom_base_de_donnees;
+
+6. CREATE TABLE: Utilisé pour créer une nouvelle table dans une base de données.
+   Syntaxe: CREATE TABLE table (colonne1 type1, colonne2 type2);
+
+7. ALTER TABLE: Utilisé pour modifier une table existante.
+   Syntaxe: ALTER TABLE table ADD colonne type;
+   
+8. DROP DATABASE: Utilisé pour supprimer une base de données.
+   Syntaxe: DROP DATABASE nom_base_de_donnees;
+
+9. DROP TABLE: Utilisé pour supprimer une table.
+   Syntaxe: DROP TABLE table;
+
+10. SELECT DISTINCT: Utilisé pour sélectionner des valeurs distinctes (uniques) d'une colonne.
+    Syntaxe: SELECT DISTINCT colonne FROM table;
+
+11. WHERE: Utilisé pour filtrer les résultats d'une requête selon une condition.
+    Syntaxe: SELECT * FROM table WHERE condition;
+
+12. ORDER BY: Utilisé pour trier les résultats d'une requête.
+    Syntaxe: SELECT colonne FROM table ORDER BY colonne [ASC|DESC];
+
+13. AND, OR: Utilisé pour combiner plusieurs conditions dans une requête.
+    Syntaxe: SELECT * FROM table WHERE condition1 AND condition2;
+             SELECT * FROM table WHERE condition1 OR condition2;
+
+14. JOIN: Utilisé pour combiner des lignes de deux ou plusieurs tables.
+    Syntaxe: SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.id;
+
+15. GROUP BY: Utilisé pour regrouper les résultats en fonction de certaines colonnes.
+    Syntaxe: SELECT colonne, COUNT(*) FROM table GROUP BY colonne;
+
+16. HAVING: Utilisé pour filtrer les résultats d'un GROUP BY.
+    Syntaxe: SELECT colonne, COUNT(*) FROM table GROUP BY colonne HAVING COUNT(*) > 5;
+
+17. LIMIT: Limite le nombre de résultats retournés par la requête.
+    Syntaxe: SELECT * FROM table LIMIT 10;
+
+18. BETWEEN: Utilisé pour filtrer les résultats d'une requête entre deux valeurs.
+    Syntaxe: SELECT * FROM table WHERE colonne BETWEEN valeur1 AND valeur2;
+
+19. LIKE: Utilisé pour rechercher un motif dans une colonne.
+    Syntaxe: SELECT * FROM table WHERE colonne LIKE 'valeur%';
+
+20. IN: Utilisé pour vérifier si une valeur appartient à une liste de valeurs.
+    Syntaxe: SELECT * FROM table WHERE colonne IN (valeur1, valeur2, valeur3);

@@ -1,0 +1,43 @@
+1. Créer une base de données :
+   CREATE DATABASE nom_de_base;
+
+2. Utiliser une base de données existante :
+   USE nom_de_base;
+
+3. Créer une table :
+   CREATE TABLE nom_table (
+       colonne1 type_de_donnée,
+       colonne2 type_de_donnée,
+       ...,
+       CONSTRAINT pk_nom PRIMARY KEY (colonne1)
+   );
+
+4. Ajouter une colonne à une table :
+   ALTER TABLE nom_table ADD colonne type_de_donnée;
+
+5. Modifier une colonne d'une table :
+   ALTER TABLE nom_table MODIFY colonne type_de_donnée;
+
+6. Supprimer une colonne d'une table :
+   ALTER TABLE nom_table DROP COLUMN colonne;
+
+7. Ajouter une clé primaire à une table :
+   ALTER TABLE nom_table ADD CONSTRAINT pk_nom PRIMARY KEY (colonne);
+
+8. Ajouter une clé étrangère à une table :
+   ALTER TABLE nom_table ADD CONSTRAINT fk_nom FOREIGN KEY (colonne) REFERENCES autre_table (colonne_reference);
+
+9. Supprimer une clé primaire :
+   ALTER TABLE nom_table DROP CONSTRAINT pk_nom;
+
+10. Supprimer une clé étrangère :
+    ALTER TABLE nom_table DROP CONSTRAINT fk_nom;
+
+11. Créer un index :
+    CREATE INDEX index_nom ON nom_table (colonne1, colonne2);
+
+12. Supprimer une table :
+    DROP TABLE nom_table;
+
+13. Supprimer une base de données :
+    DROP DATABASE nom_de_base;
