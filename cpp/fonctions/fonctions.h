@@ -1,0 +1,1 @@
+void resetplateau(char &plateau[u][u], char pionblanc);
