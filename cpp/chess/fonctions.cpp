@@ -5,13 +5,13 @@ void resetplateau(wchar_t (&plateau)[u][u]) {
     wchar_t temp[u][u] = {
         {L'8', L'♜', L'♞', L'♝', L'♛', L'♚', L'♝', L'♞', L'♜'},
         {L'7', L'♟', L'♟', L'♟', L'♟', L'♟', L'♟', L'♟', L'♟'},
-        {L'6', L' ', L' ', L' ', L' ', L' ', L' ', L' ', L' '},    // Cases vides
+        {L'6', L' ', L' ', L' ', L' ', L' ', L' ', L' ', L' '},
         {L'5', L' ', L' ', L' ', L' ', L' ', L' ', L' ', L' '},
         {L'4', L' ', L' ', L' ', L' ', L' ', L' ', L' ', L' '},
         {L'3', L' ', L' ', L' ', L' ', L' ', L' ', L' ', L' '},
-        {L'2', L'♙', L'♙', L'♙', L'♙', L'♙', L'♙', L'♙', L'♙'},  // Pions blancs
+        {L'2', L'♙', L'♙', L'♙', L'♙', L'♙', L'♙', L'♙', L'♙'},
         {L'1', L'♖', L'♘', L'♗', L'♕', L'♔', L'♗', L'♘', L'♖'},
-        {L' ', L'A', L'B', L'C', L'D', L'E', L'F', L'G', L'H'}   // Pièces blanches
+        {L' ', L'A', L'B', L'C', L'D', L'E', L'F', L'G', L'H'}
     };
     
     for (int i = 0; i < u; ++i) {
